@@ -33,6 +33,15 @@ public class Main {
             }
         };
 
+        /**
+         *  Comparator como Objeto de Expressão  lambda Com chaves:
+         *         voce cria uma instancia de Comparator e passa como parametro um lambda expression.
+         *
+         *  só que agora voce pode chamar o metodo sort sem precisar criar uma instancia de Comparator.
+         * */
+        Comparator<Product> comp1 = (P1, P2) -> {
+            return P1.getName().toUpperCase().compareTo(P2.getName().toUpperCase());
+        };
 
     }
 }
