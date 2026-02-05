@@ -37,6 +37,7 @@ public class Main {
                 return 0;
             }
         };
+
         PrintarLista.printLista(list);
 
         /**
@@ -48,6 +49,7 @@ public class Main {
         Comparator<Product> comparatorObjetoExpressaoComChaves = (P1, P2) -> {
             return P1.getName().toUpperCase().compareTo(P2.getName().toUpperCase());
         };
+
         list.sort(comparatorObjetoExpressaoComChaves);
         PrintarLista.printLista(list);
 
@@ -57,6 +59,7 @@ public class Main {
          * */
         Comparator<Product> comparatorObjetoExpressaoSemChaves = (P1, P2) -> P1.getName().toUpperCase().compareTo(P2.getName().toUpperCase());
         list.sort(comparatorObjetoExpressaoSemChaves);
+
         PrintarLista.printLista(list);
 
         /**
